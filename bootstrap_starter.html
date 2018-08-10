@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Navbars</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <style type="text/css">
-    body { padding-top: 70px; }
-    .jumbotron {
-      color: #2c3e50;
-      background: #ecf0f1;
+    <title>Bootstrap Navbars</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 70px;
+        }
 
-    }
-    .navbar-inverse {
-      background: #2c3e50;
-      color: white;
-    }
-    .navbar-inverse .navbar-brand, .navbar-inverse a{
-      color:white;
-    }
-    .navbar-inverse .navbar-nav>li>a {
-      color: white;
-    }
+        .jumbotron {
+            color: #2c3e50;
+            background: #ecf0f1;
 
-  </style>
+        }
+
+        .navbar-inverse {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .navbar-inverse .navbar-brand, .navbar-inverse a {
+            color: white;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: white;
+        }
+
+    </style>
 
 </head>
 <body>
@@ -33,52 +40,129 @@
 
 	Regardless, experiment with any nav bar options you like. See the getbootstrap.com website for documentation.
 
---> 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-nav-demo">
-      <ul class="nav navbar-nav">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+-->
+<!--<nav class="navbar navbar-inverse navbar-fixed-top">-->
+<!--<div class="container">-->
+<!--<div class="navbar-header">-->
+<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">-->
+<!--<span class="sr-only">Toggle navigation</span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--<span class="icon-bar"></span>-->
+<!--</button>-->
+<!--<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>-->
+<!--</div>-->
+<!--<div class="collapse navbar-collapse" id="bs-nav-demo">-->
+<!--<ul class="nav navbar-nav">-->
+<!--<li><a href="#">About</a></li>-->
+<!--<li><a href="#">Contact</a></li>-->
+<!--</ul>-->
+<!--<ul class="nav navbar-nav navbar-right">-->
+<!--<li><a href="#">Sign Up</a></li>-->
+<!--<li><a href="#">Login</a></li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</nav>-->
+<nav class="navbar-default">
+    <div class="container">
+        <div class="nav-header">
+            <a href="http://www.google.com" class="navbar-nav-brand"><span class="glyphicon glyphicon-search"
+                                                       aria-hidden="true">CodeSchool</span></a>
 
-<div class="container">
-	<!-- 
-		Create a Jumbotron >HERE< with a title of 'The Image Gallery' with a subtitle underneath of 'Some Beautiful Images'
-	-->	
-  
-  <!--
-	Use the image URLs below for each 9 images.
+       <style type="text/css">
+           .jumbotron
+           {
+            margin-top: 10px;
+               background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Purple117/v4/29/84/e2/2984e2eb-5d41-83e5-83c7-1580261025dd/pr_source.jpg/246x0w.jpg");
+               background-size: contain;
+           color: black}
 
-       <img src="http://i.imgur.com/qK42fUu.jpg">
-        <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
-        <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        <img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-  -->
- <!-- Providing you the includes required for jQuery and JavaScript -->
-  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+       </style>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="https://youtu.be/GfGN7bfohms">Home</a></li>
+                <li><a href="https://youtu.be/M3hiXegFHFc">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="https://youtu.be/Ib7Cb0tkQY4">About </a></li>
+                <li><a href="https://www.code-crew.org/">Sign</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><strong><em>Code School Photo Gallery</em></strong></h1>
+
+             <p>CLICK AROUND EVERYTHING WORKS</p>
+            <p><a class="btn btn-primary btn-lg" href="https://youtu.be/1mRG2oAQhso" role="button">CLICK HERE!!!</a></p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+                    <img src="http://i.imgur.com/qK42fUu.jpg">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-8  ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-8  ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-8 ">
+                <div class="thumbnail">
+
+                    <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Providing you the includes required for jQuery and JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
 
